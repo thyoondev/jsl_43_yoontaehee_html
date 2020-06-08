@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head><title> CSS3 </title>
+<meta charset="utf-8;">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<style type="text/css">
+body { font:12px "Arial"; margin:20px; }
+
+h1 { width:300px; padding:30px; text-align:center; background:#abc;
+background-image: linear-gradient(top, rgb(120,8,64) 0%, rgb(27,255,255) 59%, rgb(255,153,0) 100%);
+background-image: -o-linear-gradient(top, rgb(120,8,64) 0%, rgb(27,255,255) 59%, rgb(255,153,0) 100%);
+background-image: -moz-linear-gradient(top, rgb(120,8,64) 0%, rgb(27,255,255) 59%, rgb(255,153,0) 100%);
+background-image: -ms-linear-gradient(top, rgb(120,8,64) 0%, rgb(27,255,255) 59%, rgb(255,153,0) 100%);
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(0, rgb(120,8,64)),
+	color-stop(0.59, rgb(27,255,255)),
+	color-stop(1, rgb(255,153,0)) );
+}
+
+.grad1{
+width:300px; padding:30px; height:100px; margin:20px 0;
+background: #06f;
+background: -webkit-gradient(linear, left top, left bottom, from(#06f), to(#f0f));
+background: -o-linear-gradient(top, #06f, #f0f);
+background: -moz-linear-gradient(top, #06f, #f0f);
+}
+.grad2{
+width:300px; padding:30px; height:100px;
+background: rgb(174,188,191);
+background:-webkit-gradient(radial, center center, 50, center center, 200, from(#f00), to(#0ff));
+background:-moz-radial-gradient(center 45deg,circle closest-side, #f00 50%, #0ff 200%);
+}
+
+</style></head>
+
+<body>
+<h1>ICOX - GRADIENT</h1>
+<div class="grad1"><p>색상만 지정했을 때 GRADIENT</p></div>
+<div class="grad2"><p>방향을 지정했을 때 closest-side GRADIENT</p></div>
+
+</body>
+</html>

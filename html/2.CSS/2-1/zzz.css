@@ -1,0 +1,12 @@
+@charset "utf-8";
+p { color : red; }
+.aa { color : red; }
+   @font-face{font-family:'NGothic'; src:url('font/NanumGothic.woff') format('woff');}
+   @font-face{font-family:'NGothicB'; src:url('font/NanumGothicBold.woff') format('woff');}
+   @font-face{font-family:'NGothicEBbb'; src:url('font/NanumGothicExtraBold.woff') format('woff');}
+   @font-face{font-family:'JOKERMAN'; src:url('font/JOKERMAN.woff') format('woff');}
+   @font-face{font-family:'Brush'; src:url('font/BrushScriptStd.woff') format('woff');}
+
+   @font-face{font-family:'xx'; src:url('font/HMFMPYUN.woff') format('woff');}
+   @font-face{font-family:'ss'; src:local(*), src:url('font/πÆ√º∫Œ »∆πŒ¡§¿Ω.woff') format('woff');}
+

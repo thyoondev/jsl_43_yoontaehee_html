@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><title> CSS3 </title>
+<meta charset="utf-8">
+<style type="text/css">
+* { margin:0; padding:0; }
+li { list-style-type:none; }
+body { font:12px "Arial",Gulim; margin:20px; }
+p {
+width:140px; height:120px; padding:10px;
+background:#c00; color:#fff;  font-size:20px;
+animation:myfirst 5s infinite;
+-moz-animation:myfirst 5s infinite;
+-webkit-animation:myfirst 5s infinite;
+-o-animation:myfirst 5s infinite;
+}
+@keyframes myfirst
+{
+0% { background:#c00; width:140px; height:120px; }
+25% { background:#00c; width:450px; height:120px; }
+50% { background:#808; width:450px; height:180px; }
+75% { background:#080; width:140px; height:180px; }
+100% { background:#c00; width:140px; height:120px; }
+}
+
+@-moz-keyframes myfirst
+{
+0% { background:#c00; width:140px; height:120px; }
+25% { background:#00c; width:450px; height:120px; }
+50% { background:#808; width:450px; height:180px; }
+75% { background:#080; width:140px; height:180px; }
+100% { background:#c00; width:140px; height:120px; }
+}
+
+@-webkit-keyframes myfirst
+{
+0% { background:#c00; width:140px; height:120px; }
+25% { background:#00c; width:450px; height:120px; }
+50% { background:#808; width:450px; height:180px; }
+75% { background:#080; width:140px; height:180px; }
+100% { background:#c00; width:140px; height:120px; }
+}
+
+@-o-keyframes myfirst
+{
+0% { background:#c00; width:140px; height:120px; }
+25% { background:#00c; width:450px; height:120px; }
+50% { background:#808; width:450px; height:180px; }
+75% { background:#080; width:140px; height:180px; }
+100% { background:#c00; width:140px; height:120px; }
+}
+</style></head>
+<body>
+<h1>Animation</h1>
+<p>Animation  is my pleasure.<br />
+Animationwork gives me great pleasure.</p>
+</body>
+</html>

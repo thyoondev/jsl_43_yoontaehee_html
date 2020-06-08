@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>pattern 속성</title>
+</head>
+<body>
+<form>
+<fieldset>
+  <legend>pattern 속성</legend>
+    <p><label for="tel">휴대폰 번호 :
+    </label>
+    <input type="tel" width="3" maxlength="4" id="email_1" pattern="\d{3}" title="휴대폰 번호는 3자리 숫자로 입력하셔야 합니다." />
+    -<input type="tel" id="email_2" pattern="\d{4}" title="휴대폰 숫자-4자리 숫자로 입력하셔야 합니다." />
+    -<input type="tel" id="email_3" pattern="\d{4}" title="휴대폰 4자리 숫자로 입력하셔야 합니다." />
+    </p>
+    <p><input type="submit" value="전송" /></p>
+</fieldset>
+</form>
+</body>
+</html>

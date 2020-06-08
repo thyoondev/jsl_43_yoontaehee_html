@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><title> CSS3 </title>
+<meta charset="utf-8">
+<style type="text/css">
+body{ font:20px "Arial"; color:#333; margin:20px; }
+
+div	{ margin-bottom:20px;
+border:5px dashed #123; width:350px; padding:25px;
+background:url('images/bg_origin.gif')no-repeat;
+}
+
+.ori1 { background-origin:border-box; }	/* 영역의 안여백 포함한 부분을 경계로 */
+.ori2 { background-origin:padding-box; }	/* 영역의 테두리 포함한 부분을 경계로 */
+.ori3 { background-origin:content-box; } /* 안여백 제외한 부분을 경계로 */
+
+</style></head>
+<body>
+
+	<div class="ori1">It's impossible not only starting good but also keeping it firm!!</div>
+	<div class="ori2">It's impossible not only starting good but also keeping it firm!!</div>
+	<div class="ori3">It's impossible not only starting good but also keeping it firm!!</div>
+
+</body>
+</html>

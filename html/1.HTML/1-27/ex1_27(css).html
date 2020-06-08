@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>서브 레이아웃</title>
+<style type="text/css">
+body{font-family:돋움;font-size:12px;}
+.hidden{display:none;}
+#wrap{width:650px;margin:auto;}
+#header h1{float:left;}
+#gnb{float:right;margin-top:10px;}
+#header #gnbmenu li{list-style:none;float:left;padding-left:20px;}
+#contentwrap{height:105px;}
+#contentwrap #leftmenu{float:left;padding-right:20px;border-right:1px solid #ccc;}
+#contentwrap #content{float:left;padding-left:20px;}
+hr{clear:both;height:1px;background:#ccc;border:none;}
+address{font-style:normal;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="skipnav" class="hidden">
+		<a href="#contentwarp">컨텐츠 바로가기</a>
+	</div>
+	<div id="header">
+		<h1>아이콕스</h1>
+		<h2 class="hidden">메인메뉴</h2>
+		<div id="gnb">
+			<ul id="gnbmenu">
+				<li><a href="#">아이콕스</a></li>
+				<li><a href="#">도서소개</a></li>
+				<li><a href="#">iCoX커뮤니티</a></li>
+				<li><a href="#">iCox자료실</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr />
+	<div id="contentwrap">
+		<div id="leftmenu">
+			<h2>iCOX커뮤니티</h2>
+			<ul>
+				<li><a href="#">와글와글IT</a></li>
+				<li><a href="#">C 스쿨</a></li>
+				<li><a href="#">Java 스쿨</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="content_header">컨텐츠 머리말</div>
+			<div id="content_body">내용...</div>
+		</div>
+	</div>
+	<hr />
+	<div id="footer">
+		<address>서울시 양천구 목1동 323-14 현대드림타워 1312호 연락처 : 02-1111-2222<br />COPYRIGHT &copy; iCox. All Rights Reserved</address>
+	</div>
+</div>
+</body>
+</html>

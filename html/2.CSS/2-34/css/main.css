@@ -1,0 +1,5 @@
+*{margin:0;padding:0;}
+#skip, .skip { font-size:0; width:0; height:0; line-height:0; position:absolute; left:-9999px; }
+body { font:12px "굴림",Gulim; margin:20px; }
+
+h1 a { display:block; width:97px; height:48px; background:url("../images/logo.svg") no-repeat; }

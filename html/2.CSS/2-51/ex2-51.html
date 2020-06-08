@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><title> CSS3 </title>
+<meta charset="utf-8" />
+<style type="text/css">
+* { margin:0; padding:0; }
+li { list-style-type:none; }
+body { font:20px "Arial",Gulim; margin:20px; }
+h1,ul { padding:10px; }
+
+.util li { display:inline; }
+.util li a {
+float:left; padding:10px 20px; margin-right:1px;
+background:#123456; color:#abcedf;
+transition:background 2s, color 2s;
+-moz-transition:background 2s, color 2s;
+-webkit-transition:background 2s, color 2s;
+-o-transition:background 2s, color 2s;
+}
+.util li a:hover { background:#abcedf;  color:#123456; }
+
+</style></head>
+<body>
+<h1>Changing Utilmenu</h1>
+<ul class="util">
+<li><a href="#">HOME</a></li>
+<li><a href="#">JOIN</a></li>
+<li><a href="#">SITEMAP</a></li>
+</ul>
+</body>
+</html>

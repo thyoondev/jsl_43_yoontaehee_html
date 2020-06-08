@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>폼</title>
+</head>
+<body>
+<h1>input 요소</h1>
+<form action="join.php" method="post">
+<fieldset>
+  <legend>회원가입</legend>
+  <p>아이디 : <input type="text" size="12" maxlength="8" /></p>
+  <p>비밀번호 : <input type="password" size="12" maxlength="8" /></p>
+  <p>메일 수신 여부 :
+  <input type="radio" value="y" name="receive" />예
+  <input type="radio" value="n" name="receive" />아니요
+  </p>
+  <p>관심 분야:
+  <input type="checkbox" value="HTML" name="chk1" />HTML
+  <input type="checkbox" value="CSS" name="chk2" />CSS
+  <input type="checkbox" value="Javascript" name="chk3" />Javascript
+  </p>
+  <p>
+  <input type="submit" value="전송"/>
+  <input type="reset" value="취소"/>
+  <input type="button" value="확인"/>
+  <input type="image" src="images/search.gif" alt="검색" title="asdfasdf" />
+  </p>
+  <p>파일 올리기 : <input type="file" /></p>
+  <p><input type="hidden" />sdf</p>
+</fieldset>
+</form>
+</body>
+</html>
