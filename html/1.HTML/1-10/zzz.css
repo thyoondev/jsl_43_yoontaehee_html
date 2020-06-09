@@ -1,3 +1,11 @@
 @charset "utf-8";
 p { color : red; }
 #aa { color : red; }
+#logo{
+    width: 100px;
+    height: 58;
+}
+#map{
+    width: 100px;
+    height: 100px;
+}
