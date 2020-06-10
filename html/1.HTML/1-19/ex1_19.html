@@ -1,48 +1,96 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
-<head>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<style type="text/css">
-p { color: red;}
-.p2 { color: blue; text-align:center;}
-#t { border:1px solid red;}
-</style>
-<title>테이블</title>
-</head>
-<body>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <style type="text/css">
+            p { color: red;}
+            .p2 { color: blue; text-align:center;}
+            #t { border:1px solid red;}
+            table{
+                text-align: center;
+                border: 1px solid gray;
 
-<table border="1" width="700">
-  <tr>
-    <th width="150" style="color:red;">#수험번호#</td>
-    <td colspan="4">20170501</td>
-  </tr>
+            }
+            td{
+                width: 50px;
+                border: 1px solid gray;
+            }
 
-  <tr>
-    <td rowspan="2" width="100" style="color:blue">성명</td>
-    <td rowspan="2">홍길동</td>
-    <td >생년월일</td>
-    <td >1969.07.24</td>
-  </tr>
-  <tr>
-    <td>주민번호</td>
-    <td>00120852-2321212</td>
-  </tr>
-  <tr>
-    <td>주소</td>
-    <td colspan="3">대전광역시</td>
-  </tr>
-  <tr>
-    <td>본적</td>
-    <td colspan="3">대전광역시</td>
-  </tr>
-  <tr>
-    <td>연락처</td>
-    <td colspan="3">000-0000-1111</td>
-  </tr>
-  <tr>
-    <td>e-mail</td>
-    <td colspan="3">sshj@empas.com</td>
-  </tr>
-</table>
-</body>
+            td img{
+                height: 20px;
+            }
+        </style>
+        <title>테이블</title>
+    </head>
+    <body>
+
+        <table width="700" >
+          <tr>
+            <td width="150" style="color:red;">#수험번호#</td>
+            <td colspan="3">20170501</td>
+          </tr>
+          <tr>
+            <td>지역</td>
+            <td>대전</td>
+            <td>나머지 주소</td>
+            <td>서구 둔산동 12-10</td>
+          </tr>
+          <tr>
+            <td>본적</td>
+            <td colspan="3">대전광역시</td>
+          </tr>
+          <tr>
+            <td>연락처</td>
+            <td colspan="3">000-0000-1111</td>
+          </tr>
+          <tr>
+            <td>e-mail</td>
+            <td colspan="3">sshj@empas.com</td>
+          </tr>
+        </table>
+
+        <br><br><br><br><br><br><br><br><br><br>
+        <table>
+            <tr>
+                <td colspan="3">147</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5</td>
+                <td colspan="2">811</td>
+            </tr>
+            <tr>
+                <td colspan="2">36</td>
+                <td>9</td>
+                <td>12</td>
+            </tr>
+        </table>
+         <br><br><br><br><br><br><br><br><br><br>
+        <table>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <td rowspan="2">ei</td>
+                <td>f</td>
+                <td colspan="2"><img src="../1-10/images/icox_logo.gif" alt=""></td>
+            </tr>
+            <tr>
+                <td>j</td>
+                <td>k</td>
+                <td>l</td>
+                <td>l</td>
+            </tr>
+            <tr>
+                <td>m</td>
+                <td>n</td>
+                <td>o</td>
+                <td>p</td>
+            </tr>
+        </table>
+    </body>
 </html>
