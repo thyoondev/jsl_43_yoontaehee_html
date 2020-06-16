@@ -1,17 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
-<head><title> CSS3 </title>
-<meta charset="utf-8">
+<head>
+    <title> CSS3 </title>
+    <meta charset="utf-8">
 
-<style type="text/css">
-   * { margin : 0; }			/* 모든 요소의 여백을 없애준다. */
-   #container { width : 900px; }        /* id가 container인 박스의 가로폭을 900px로 한다. */
-   h1 { color : blue; }		        /* h1 요소의 글자색을 파랑색으로 한다. */
-   h1 + p > span { color : red; }	/* h1 바로 다음에 나오는 p요소 속에 있는 
-                                               span요소의 글자색을 빨간색으로 한다. */
-   .bamboo { background : orange; }	/* class가 bamboo인 요소의 글자색을 
-                                               주황색으로 한다. */
-</style></head>
+    <style type="text/css">
+       * { margin : 0; }			/* 모든 요소의 여백을 없애준다. */
+       #container {
+           width : 400px;
+        }        /* id가 container인 박스의 가로폭을 900px로 한다. */
+       h1 {
+           color : blue;
+        }		        /* h1 요소의 글자색을 파랑색으로 한다. */
+       h1 + p > span {
+           color : red;
+        }	/* h1 바로 다음에 나오는 p요소 속에 있는 
+                                                   span요소의 글자색을 빨간색으로 한다. */
+       .bamboo {
+           background : orange;
+        }	/* class가 bamboo인 요소의 글자색을  주황색으로 한다. */                                         
+    </style>
+</head>
 <body>
    <div id="container">
      <h1>건강해지는 차</h1>
