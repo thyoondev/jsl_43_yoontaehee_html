@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+    <script type="text/javascript">
+        function result(){
+
+                let kor = point.t_kor.value;
+                let eng = point.t_eng.value;
+                let mat = point.t_mat.value;
+
+                let total = Number(kor) + Number(eng) + Number(mat);
+                let ava = total/3;
+
+                point.t_total.value = total;
+                point.t_ava.value = ava;
+        }
+    </script>
+	<style>
+        table, td, th{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+	<header></header>
+	<main>
+        <caption>성적관리</caption>
+        <form name="point">
+            <table>
+                <tr>
+                    <th>성명</th>
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                    <th>총점</th>
+                    <th>평균</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="t_name"></td>
+                    <td><input type="text" name="t_kor"></td>
+                    <td><input type="text" name="t_eng"></td>
+                    <td><input type="text" name="t_mat"></td>
+                    <td><input type="text" name="t_total"></td>
+                    <td><input type="text" name="t_ava"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="button" value="계산" onclick="result()"></td>
+                </tr>
+            </table>
+        </form>
+	</main>
+	<footer></footer>
+	<script type="text/javascript" src=""></script>
+</body>
+
+</html>
