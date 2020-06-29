@@ -12,20 +12,71 @@
     <script type="text/javascript">
         function result(){
 
-                let kor = point.t_kor.value;
-                let eng = point.t_eng.value;
-                let mat = point.t_mat.value;
+                let name = point.t_name1.value;
+                let kor = point.t_kor1.value;
+                let eng = point.t_eng1.value;
+                let mat = point.t_mat1.value;
 
                 let total = Number(kor) + Number(eng) + Number(mat);
-                let ava = total/3;
+                let ava = (total/3).toFixed(2);
 
-                point.t_total.value = total;
-                point.t_ava.value = ava;
+                point.t_total1.value = total;
+                point.t_ava1.value = ava;
+
+                let total_kor += Number(kor);
+                let total_eng += Number(eng);
+                let total_mat += Number(mat);
+
+                name = point.t_name2.value;
+                kor = point.t_kor2.value;
+                eng = point.t_eng2.value;
+                mat = point.t_mat2.value;
+
+                total = Number(kor) + Number(eng) + Number(mat);
+                ava = (total/3).toFixed(2);
+
+                point.t_total2.value = total;
+                point.t_ava2.value = ava;
+
+                total_kor = Number(kor);
+                total_eng = Number(eng);
+                total_mat = Number(mat);
+
+                name = point.t_name3.value;
+                kor = point.t_kor3.value;
+                eng = point.t_eng3.value;
+                mat = point.t_mat3.value;
+
+                total = Number(kor) + Number(eng) + Number(mat);
+                ava = (total/3).toFixed(2);
+
+                point.t_total3.value = total;
+                point.t_ava3.value = ava;
+
+                total_kor = Number(kor);
+                total_eng = Number(eng);
+                total_mat = Number(mat);
+
+                /*var ranking = 1;
+                if(tot_1 < tot_2) ranking++;
+                if(tot_1 < tot_3) ranking++;
+                point.t_rank_1.value = ranking;*/
+
+                point.t_kor4.value = total_kor;
+                point.t_eng4.value = total_eng;
+                point.t_mat4.value = total_mat;
         }
     </script>
 	<style>
         table, td, th{
             border: 1px solid gray;
+        }
+        input{
+            width:70px;
+            text-align: center;
+        }
+        td{
+            text-align: center;
         }
     </style>
 </head>
@@ -33,29 +84,55 @@
 <body>
 	<header></header>
 	<main>
-        <caption>성적관리</caption>
+        <caption>成績管理</caption>
         <form name="point">
             <table>
                 <tr>
-                    <th>성명</th>
-                    <th>국어</th>
-                    <th>영어</th>
-                    <th>수학</th>
-                    <th>총점</th>
-                    <th>평균</th>
+                    <th>名前</th>
+                    <th>国語</th>
+                    <th>英語</th>
+                    <th>数学</th>
+                    <th>総点</th>
+                    <th>平均</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="t_name"></td>
-                    <td><input type="text" name="t_kor"></td>
-                    <td><input type="text" name="t_eng"></td>
-                    <td><input type="text" name="t_mat"></td>
-                    <td><input type="text" name="t_total"></td>
-                    <td><input type="text" name="t_ava"></td>
+                    <td><input type="text" name="t_name1"></td>
+                    <td><input type="text" name="t_kor1"</td>
+                    <td><input type="text" name="t_eng1"></td>
+                    <td><input type="text" name="t_mat1"></td>
+                    <td><input type="text" name="t_total1" readonly></td>
+                    <td><input type="text" name="t_ava1" readonly></td>
+                    <td><input type="text" name="t_rank1" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="t_name2"></td>
+                    <td><input type="text" name="t_kor2"</td>
+                    <td><input type="text" name="t_eng2"></td>
+                    <td><input type="text" name="t_mat2"></td>
+                    <td><input type="text" name="t_total2" readonly></td>
+                    <td><input type="text" name="t_ava2" readonly></td>
+                    <td><input type="text" name="t_rank2" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="t_name3"></td>
+                    <td><input type="text" name="t_kor3"</td>
+                    <td><input type="text" name="t_eng3"></td>
+                    <td><input type="text" name="t_mat3"></td>
+                    <td><input type="text" name="t_total3" readonly></td>
+                    <td><input type="text" name="t_ava3" readonly></td>
+                    <td><input type="text" name="t_rank3" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="t_name4" value="all"></td>
+                    <td><input type="text" name="t_kor4"</td>
+                    <td><input type="text" name="t_eng4"></td>
+                    <td><input type="text" name="t_mat4"></td>
+
                 </tr>
             </table>
             <table>
                 <tr>
-                    <td><input type="button" value="계산" onclick="result()"></td>
+                    <td><input type="button" value="勘定" onclick="result()"></td>
                 </tr>
             </table>
         </form>

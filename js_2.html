@@ -1,0 +1,305 @@
+<html>
+<head>
+    <script>
+      /*
+        function total1(){
+            var total_kor = 0;
+			var total_eng = 0;
+			var total_mat = 0;
+            var total_sci = 0;
+
+
+            var array = [1,2,3,4];
+            for(var i = 0; i < 5; i++){
+                var kor = point.t_kor_(array[i]).value;
+                var eng = point.t_eng_(array[i]).value;
+                var mat = point.t_mat_(array[i]).value;
+                var sci = point.t_sci_(array[i]).value;
+                }
+			var total = 0;
+
+
+
+                for(var i = 0; i < 5; i++){
+                    alert(Number(kor));
+                total_kor += Number(kor);
+                total_eng += Number(eng);
+                total_mat += Number(mat);
+                total_sci += Number(sci);
+
+                kor = point.t_kor_(array[i]).value;
+                eng = point.t_eng_(array[i]).value;
+                mat = point.t_mat_(array[i]).value;
+                sci = point.t_mat_(array[i]).value;
+                total = Number(kor) + Number(eng) + Number(mat) + Number(sci);
+                point.t_total_(array[i]).value = total;
+                point.t_ava_(array[i]).value = (total / 4).toFixed(1);
+
+                }
+        }
+*/
+
+        function result(){
+
+            var total_kor = 0;
+			var total_eng = 0;
+			var total_mat = 0;
+            var total_sci = 0;
+
+			var kor = point.t_kor_1.value;
+			var eng = point.t_eng_1.value;
+			var mat = point.t_mat_1.value;
+            var sci = point.t_sci_1.value;
+			var total = Number(kor) + Number(eng) + Number(mat) + Number(sci);
+			point.t_total_1.value = total;
+			point.t_ava_1.value = (total / 4).toFixed(1);
+
+			total_kor += Number(kor);
+			total_eng += Number(eng);
+			total_mat += Number(mat);
+            total_sci += Number(sci);
+
+            if(isNaN(kor)){
+                alert("정수 입력하시오~~~");
+                point.t_kor_1.value="";
+                point.t_kor_1.focus();
+                return;
+            }
+            if(Number(kor) < 0 || Number(kor) > 100){
+                alert("잘못된 점수~~");
+                point.t_kor_1.value = "";
+                point.t_kor_1.focus();
+                return;
+            }
+
+            if(isNaN(eng)){
+                alert("정수 입력하시오~~~");
+                point.t_eng_1.value="";
+                point.t_eng_1.focus();
+                return;
+            }
+            if(Number(eng) < 0 || Number(eng) > 100){
+                alert("잘못된 점수~~");
+                point.t_eng_1.value = "";
+                point.t_eng_1.focus();
+                return;
+            }
+
+            if(isNaN(mat)){
+                alert("정수 입력하시오~~~");
+                point.t_mat_1.value="";
+                point.t_mat_1.focus();
+                return;
+            }
+            if(Number(mat) < 0 || Number(mat) > 100){
+                alert("잘못된 점수~~");
+                point.t_mat_1.value = "";
+                point.t_mat_1.focus();
+                return;
+            }
+
+            if(isNaN(sci)){
+                alert("정수 입력하시오~~~");
+                point.t_sci_1.value="";
+                point.t_sci_1.focus();
+                return;
+            }
+            if(Number(sci) < 0 || Number(sci) > 100){
+                alert("잘못된 점수~~");
+                point.t_sci_1.value = "";
+                point.t_sci_1.focus();
+                return;
+            }
+
+			kor = point.t_kor_2.value;
+			eng = point.t_eng_2.value;
+			mat = point.t_mat_2.value;
+            sci = point.t_mat_2.value;
+			total = Number(kor) + Number(eng) + Number(mat) + Number(sci);
+			point.t_total_2.value = total;
+			point.t_ava_2.value = (total / 4).toFixed(1);
+
+
+			total_kor += Number(kor);
+			total_eng += Number(eng);
+			total_mat += Number(mat);
+            total_sci += Number(sci);
+
+			kor = point.t_kor_3.value;
+			eng = point.t_eng_3.value;
+			mat = point.t_mat_3.value;
+            sci = point.t_sci_3.value;
+			total = Number(kor) + Number(eng) + Number(mat) + Number(sci);
+			point.t_total_3.value = total;
+			point.t_ava_3.value = (total / 4).toFixed(1);
+
+
+			total_kor += Number(kor);
+			total_eng += Number(eng);
+			total_mat += Number(mat);
+            total_sci += Number(sci);
+
+			point.t_total_kor.value = total_kor;
+			point.t_total_eng.value = total_eng;
+			point.t_total_mat.value = total_mat;
+            point.t_total_sci.value = total_sci;
+
+			point.t_ava_kor.value = (total_kor / 4).toFixed(1);
+			point.t_ava_eng.value = (total_eng / 4).toFixed(1);
+			point.t_ava_mat.value = (total_mat / 4).toFixed(1);
+            point.t_ava_sci.value = (total_sci / 4).toFixed(1);
+
+
+
+
+			var tot_1 = point.t_total_1.value;
+			var tot_2 = point.t_total_2.value;
+			var tot_3 = point.t_total_3.value;
+            var ranking = 1;
+
+                if(tot_1 > (tot_2 && tot_3)){
+                    point.t_rank_1.value = ranking;
+                    if(tot_2 > tot_3){
+                        ranking += 1;
+                        point.t_rank_2.value = ranking;
+                        ranking += 1;
+                        point.t_rank_3.value = ranking;
+                    }else{
+                        ranking += 1;
+                        point.t_rank_3.value = ranking;
+                        ranking += 1;
+                        point.t_rank_2.value = ranking;
+                    }
+
+                }else if(tot_2 > (tot_1 && tot_3)){
+                    point.t_rank_2.value = ranking;
+                    if(tot_1 > tot_3){
+                        ranking += 1;
+                        point.t_rank_1.value = ranking;
+                        ranking += 1;
+                        point.t_rank_3.value = ranking;
+                    }else{
+                        ranking += 1;
+                        point.t_rank_3.value = ranking;
+                        ranking += 1;
+                        point.t_rank_1.value = ranking;
+                    }
+
+                }else if(tot_3 > (tot_1 && tot_2)){
+                    point.t_rank_3.value = ranking;
+                    if(tot_1 > tot_2){
+                        ranking += 1;
+                        point.t_rank_1.value = ranking;
+                        ranking += 1;
+                        point.t_rank_2.value = ranking;
+                    }else{
+                        ranking += 1;
+                        point.t_rank_2.value = ranking;
+                        ranking += 1;
+                        point.t_rank_1.value = ranking;
+                    }
+                }
+
+
+
+		}
+    </script>
+	<style>
+		input{
+			width:70px;
+			text-align:center;
+		}
+		td{
+			text-align:center;
+			padding:5px;
+		}
+	</style>
+
+<body>
+	<form name="point">
+		<table border="1" width="700">
+			<caption>성적관리</caption>
+			<colgroup>
+				<col width="200" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+				<col width="100" />
+			</colgroup>
+		<thead>
+				<tr>
+					<th>성명</th>
+					<th>국어</th>
+					<th>영어</th>
+					<th>수학</th>
+					<th>과학</th>
+					<th>총점</th>
+					<th>평균</th>
+					<th>석차</th>
+				</tr>
+		</thead>
+		<tbody>
+				<tr>
+					<td><input type="text" name="t_name_1"></td>
+					<td><input type="text" name="t_kor_1"></td>
+					<td><input type="text" name="t_eng_1"></td>
+					<td><input type="text" name="t_mat_1"></td>
+					<td><input type="text" name="t_sci_1"></td>
+					<td><input type="text" name="t_total_1" readonly></td>
+					<td><input type="text" name="t_ava_1" readonly></td>
+					<td><input type="text" name="t_rank_1" readonly></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="t_name_2"></td>
+					<td><input type="text" name="t_kor_2"></td>
+					<td><input type="text" name="t_eng_2"></td>
+					<td><input type="text" name="t_mat_2"></td>
+					<td><input type="text" name="t_sci_2"></td>
+					<td><input type="text" name="t_total_2" readonly></td>
+					<td><input type="text" name="t_ava_2" readonly></td>
+					<td><input type="text" name="t_rank_2" readonly></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="t_name_3"></td>
+					<td><input type="text" name="t_kor_3"></td>
+					<td><input type="text" name="t_eng_3"></td>
+					<td><input type="text" name="t_mat_3"></td>
+					<td><input type="text" name="t_sci_3"></td>
+					<td><input type="text" name="t_total_3" readonly></td>
+					<td><input type="text" name="t_ava_3" readonly></td>
+					<td><input type="text" name="t_rank_3" readonly></td>
+				</tr>
+				<tr>
+					<td>총 계</td>
+					<td><input type="text" name="t_total_kor"></td>
+					<td><input type="text" name="t_total_eng"></td>
+					<td><input type="text" name="t_total_mat"></td>
+					<td><input type="text" name="t_total_sci"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>평 균</td>
+					<td><input type="text" name="t_ava_kor"></td>
+					<td><input type="text" name="t_ava_eng"></td>
+					<td><input type="text" name="t_ava_mat"></td>
+					<td><input type="text" name="t_ava_sci"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+		</tbody>
+	</table>
+	</form>
+	<table width="700px">
+		<tr>
+			<td><input type="button" onclick="result()" value=" 계 산 "></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
