@@ -1,43 +1,45 @@
 <html>
 <head>
     <script>
-      /*
-        function total1(){
-            var total_kor = 0;
-			var total_eng = 0;
-			var total_mat = 0;
-            var total_sci = 0;
-
-
-            var array = [1,2,3,4];
-            for(var i = 0; i < 5; i++){
-                var kor = point.t_kor_(array[i]).value;
-                var eng = point.t_eng_(array[i]).value;
-                var mat = point.t_mat_(array[i]).value;
-                var sci = point.t_sci_(array[i]).value;
-                }
-			var total = 0;
-
-
-
-                for(var i = 0; i < 5; i++){
-                    alert(Number(kor));
-                total_kor += Number(kor);
-                total_eng += Number(eng);
-                total_mat += Number(mat);
-                total_sci += Number(sci);
-
-                kor = point.t_kor_(array[i]).value;
-                eng = point.t_eng_(array[i]).value;
-                mat = point.t_mat_(array[i]).value;
-                sci = point.t_mat_(array[i]).value;
-                total = Number(kor) + Number(eng) + Number(mat) + Number(sci);
-                point.t_total_(array[i]).value = total;
-                point.t_ava_(array[i]).value = (total / 4).toFixed(1);
-
-                }
+        function sub(aa, bb){
+            var result = aa + bb;
+            return result;
         }
-*/
+
+
+        function test(){
+            var a = 10;
+            var b = 20;
+            var sum = sub(a,b);
+            alert(sum);
+        }
+
+
+
+        function checkValue(obj){
+            var point = obj.value;
+            var result = true;
+            if(obj.value == ""){
+                alert("값을 입력하시오~~~");
+                obj.value = "";
+                obj.focus();
+                result  = false;
+            }
+
+            if(isNaN(point)){
+                alert("정수 입력하시오~~~");
+                obj.value = "";
+                obj.focus();
+                result  = false;
+            }
+            if(Number(point) < 0 || Number(point) > 100){
+                alert("잘못된 점수~~");
+                obj.value = "";
+                obj.focus();
+                result = false;
+            }
+            return result;
+        }
 
         function result(){
 
@@ -45,11 +47,36 @@
 			var total_eng = 0;
 			var total_mat = 0;
             var total_sci = 0;
-
 			var kor = point.t_kor_1.value;
 			var eng = point.t_eng_1.value;
 			var mat = point.t_mat_1.value;
             var sci = point.t_sci_1.value;
+
+            //var tf = checkValue(point.t_kor_1);
+            if(!checkValue(point.t_kor_1)) return;
+            //tf = checkValue(point.t_eng_1);
+            if(!checkValue(point.t_eng_1)) return;
+            //tf = checkValue(point.t_mat_1);
+            if(!checkValue(point.t_mat_1)) return;
+            //tf = checkValue(point.t_sci_1);
+            if(!checkValue(point.t_sci_1)) return;
+
+            if(!checkValue(point.t_kor_2)) return;
+            if(!checkValue(point.t_eng_2)) return;
+            if(!checkValue(point.t_mat_2)) return;
+            if(!checkValue(point.t_sci_2)) return;
+
+            if(!checkValue(point.t_kor_3)) return;
+            if(!checkValue(point.t_eng_3)) return;
+            if(!checkValue(point.t_mat_3)) return;
+            if(!checkValue(point.t_sci_3)) return;
+
+            if(!checkValue(point.t_kor_4)) return;
+            if(!checkValue(point.t_eng_4)) return;
+            if(!checkValue(point.t_mat_4)) return;
+            if(!checkValue(point.t_sci_4)) return;
+
+
 			var total = Number(kor) + Number(eng) + Number(mat) + Number(sci);
 			point.t_total_1.value = total;
 			point.t_ava_1.value = (total / 4).toFixed(1);
@@ -58,7 +85,7 @@
 			total_eng += Number(eng);
 			total_mat += Number(mat);
             total_sci += Number(sci);
-
+        /*
             if(isNaN(kor)){
                 alert("정수 입력하시오~~~");
                 point.t_kor_1.value="";
@@ -151,7 +178,7 @@
 
 
 
-
+*/
 			var tot_1 = point.t_total_1.value;
 			var tot_2 = point.t_total_2.value;
 			var tot_3 = point.t_total_3.value;
