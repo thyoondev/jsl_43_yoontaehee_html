@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+img{vertical-align:top; border:0;}
+ul{list-style:none;}
+
+#bannerWrap{width:420px; height:68px; position:relative;}
+.frame{width:400px; overflow:hidden; position:relative;}
+#bannerList{width:700px; position:relative; left:0;}
+#bannerList li{float:left; width:100px;}
+#bannerList:after{content:""; display:block; clear:both;}
+.leftBtn{position:absolute; right:5px; top:10px;}
+.rightBtn{position:absolute; right:5px; top:40px;}

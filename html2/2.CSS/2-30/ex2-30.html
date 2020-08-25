@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head><title>CSS</title>
+<meta charset="utf-8">
+<style type="text/css">
+  * { margin:0; padding:0; } li{ list-style-type:none; }
+  body { font:12px/1.5 "굴림",Gulim; margin:20px; background:url("images/bg_grid.gif"); }
+
+  #box { position:relative; width:550px; background:url("images/bg_sasun.gif"); }
+  p { width:130px; height:80px; padding:10px; color:#fff; font-weight:bold; }
+  .myred { background:red; }
+  .myblue { background:blue; position:absolute; left:50px; top:30px; z-index:2; }
+  .mygreen { background:green; position:relative; left:30px; top:20px; }
+
+</style></head>
+<body>
+  <div id="box">
+	<p class="myred">박스의 크기와 위치를 잘 살펴보아야 합니다.</p>
+	<p class="myblue">박스의 포지션 속성을 바꿔가며 테스트해 보아야 합니다.</p>
+	<p class="mygreen">포지션을 이해하기 위해서는 시험해보고 관찰해 보는 것이 절대적으로 필요합니다.</p>
+  </div>
+</body>
+</html>

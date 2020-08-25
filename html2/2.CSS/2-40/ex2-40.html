@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+  <html lang="ko">
+    <head><title> CSS3 </title>
+      <meta charset="utf-8">
+      <style type="text/css">
+        body{ font:bold 20px "Arial"; color:#333; margin:20px; }
+        div {
+          width:436px; height:68px;padding:16px 11px; margin-bottom:20px;
+          box-shadow: inset 0px 0px 15px 10px rgba(255, 128, 0, 0.8);
+          border-width:20px;
+        }
+        #round 	{
+          -moz-border-image:url(images/border.png) 27 27 round; /* Firefox */
+          -webkit-border-image:url(images/border.png) 27 27 round; /* Safari and Chrome */
+          -o-border-image:url(images/border.png) 27 27 round; /* Opera */
+          border-image:url(images/border.png) 27 27 round;
+        }
+        #repeat {
+          -moz-border-image:url(images/border.png) 27 repeat stretch; /*round와 비교*/
+	  -webkit-border-image:url(images/border.png) 27 repeat stretch;
+          -o-border-image:url(images/border.png) 27 repeat stretch; /* 상하 반복, 좌우 당김*/
+	  border-image:url(images/border.png) 27 repeat stretch;
+        }
+         #stretch {
+          -moz-border-image:url(images/border.png) 27 27 stretch; /* Firefox */
+          -webkit-border-image:url(images/border.png) 27 27 stretch; /* Safari and Chrome */
+          -o-border-image:url(images/border.png) 27 27 stretch; /* Opera */
+          border-image:url(images/border.png) 27 27 stretch;
+        }
+      </style></head>
+    <body>
+     <div id="round">It's impossible not only starting good but also keeping it firm!!</div>
+     <div id="repeat">It's impossible not only starting good but also keeping it firm!!</div>
+     <div id="stretch">It's impossible not only starting good but also keeping it firm!!</div>
+    </body>
+  </html>

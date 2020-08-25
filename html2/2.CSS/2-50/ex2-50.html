@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><title> CSS3 </title>
+<meta charset="utf-8" />
+<style type="text/css">
+* { margin:0; padding:0; }
+li { list-style-type:none; }
+body { font:20px "Arial",Gulim; margin:20px; }
+h1,ul { padding:10px; }
+.menu li a {
+display:block; width:300px; height:20px; padding:10px;
+margin-bottom:2px;background:#abc; text-indent:10px;
+transition:width 1.2s;
+-moz-transition:width 1.2s;
+-webkit-transition:width 1.2s;
+-o-transition:width 1.2s;
+color:#123456; text-decoration:none;
+}
+.menu li a:hover { width:450px; letter-spacing:3px; color:#c00; }
+
+</style></head>
+<body>
+<h1>Moving Mainmenu</h1>
+<ul class="menu">
+<li><a href="#">COMPANY</a></li>
+<li><a href="#">PRODUCT</a></li>
+<li><a href="#">SERVICE</a></li>
+<li><a href="#">CUSTOMER SUPPORT</a></li>
+<li><a href="#">COMMUNITY</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><title> CSS3 </title>
+<meta charset="utf-8">
+<style type="text/css">
+* { margin:0; padding:0; }
+li { list-style-type:none; }
+body { font:12px "굴림",Gulim; width:400px;background:url("images/bg_grid.gif"); }
+.menu { width:100%; }
+.menu:after { content:""; display:block; clear:both;  }
+.menu li { float:left; width:50%; text-align:center; padding:10px 0;background:#eaeae1; border:2px solid #666;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
+.menu li:nth-child(2) { border-left:none; }
+.menu li:nth-child(3) { border-top:none; }
+.menu li:nth-child(4) { border-left:none; border-top:none; }
+.menu li a { color:#135; text-decoration:none; }
+.menu li a:hover { color:#c00; font-weight:bold; }
+</style></head>
+<body>
+<ul class="menu">
+<li><a href="#">아이콕스</a></li>
+<li><a href="#">도서소개</a></li>
+<li><a href="#">iCox커뮤니티</a></li>
+<li><a href="#">iCox자료실</a></li>
+</ul>
+</body>
+</html>

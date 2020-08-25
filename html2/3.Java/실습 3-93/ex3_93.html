@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jquery mobile</title> 
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+* { margin:0; padding:0; }
+</style> 
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+<div data-role="page" data-theme="b" id="mainPage">
+	<div data-role="header">
+		<h1>메인 타이틀</h1>
+	</div><!-- /header -->
+	<div data-role="content">	
+		<p><a href="#sub1" data-transition="slidedown">서브 페이지1</a></p>		
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>풋터영역</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="sub1"  id="sub1" data-add-back-btn="true" data-theme="a">
+	<div data-role="header">
+		<h1>sub1 타이틀</h1>
+	</div><!-- /header -->
+	<div data-role="content">	
+		<p>컨텐츠 내용 영역</p>		
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>풋터영역</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

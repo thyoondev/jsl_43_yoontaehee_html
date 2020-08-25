@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title> new document </title>
+<script type="text/javascript">
+//<![CDATA[
+	var myArea=prompt("지역을 입력하세요","서울");
+	switch(myArea){
+		case "서울":        //myArea에 값이 “서울”인 경우
+				areaNum="02";
+				break;
+		case "경기":        //myArea에 값이 “경기”인 경우
+				areaNum="031";
+				break;
+		case "부산":        //myArea에 값이 “부산”인 경우
+				areaNum="051";
+				break;
+		default:           //myArea에 값이 “서울”인 경우
+				alert("등록되지 않은 지역입니다")
+	}
+	document.write(myArea+"지역번호는 "+areaNum);
+//]]>
+</script>
+ </head>
+
+ <body>
+  
+ </body>
+</html>
